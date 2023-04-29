@@ -24,3 +24,13 @@ body {
 #title > h1 {
     padding-top: 5%;
 }
+#order {
+    height: var(--header-height);
+    background-color: #000000;
+    color: #d5db3f;
+    font-size: 30px;
+    margin-right: 2px;
+}
+#order:hover {
+    outline: 1px solid #eeeeee;
+}
