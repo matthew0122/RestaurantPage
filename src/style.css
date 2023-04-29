@@ -1,4 +1,13 @@
+body {
+    background-color: #171717;
+}
 #header {
-    width: 100px;
-    background-color: red;
+    width: 100vw;
+    height: min(150px, 40%);
+    background-color: #333333;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
 }
