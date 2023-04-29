@@ -1,5 +1,6 @@
 :root {
     --header-height: min(150px, 40%);
+    --tabs-height: min(50px, 14%);
 }
 body {
     background-color: #171717;
@@ -8,7 +9,7 @@ body {
     width: 100vw;
     height: var(--header-height);
     background-color: #333333;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     display: grid;
@@ -33,4 +34,20 @@ body {
 }
 #order:hover {
     outline: 1px solid #eeeeee;
+}
+#tabs {
+    height: var(--tabs-height);
+    width: 100vw;
+    background-color: #373737;
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    display: grid;
+    grid-template-columns: 7fr 2fr 2fr 2fr 7fr;
+    gap: 10px;
+}
+.menuButton {
+    background-color: #333333;
+    color: #aaaaaa;
+    width: 100%;
 }

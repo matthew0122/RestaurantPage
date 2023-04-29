@@ -3,6 +3,7 @@ const content = document.getElementById('content');
 
 export function createHome(){
     createHeader();
+    createTabs();
 }
 
 function createHeader(){
@@ -21,4 +22,23 @@ function createHeader(){
     topButton.id = 'order';
     header.append(topButton);
     content.appendChild(header);
+}
+function createTabs() {
+    const tabs = document.createElement('div');
+    tabs.id = 'tabs';
+    const blank = document.createElement('div');
+    tabs.appendChild(blank);
+    const menu = document.createElement('button');
+    menu.classList.add('menuButton');
+    menu.innerText = "Menu";
+    tabs.appendChild(menu);
+    const hours = document.createElement('button');
+    hours.classList.add('menuButton');
+    hours.innerText = "Hours";
+    tabs.appendChild(hours);
+    const contact = document.createElement('button');
+    contact.classList.add('menuButton');
+    contact.innerText = "Contact";
+    tabs.appendChild(contact);
+    content.appendChild(tabs);
 }
