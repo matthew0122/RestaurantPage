@@ -31,14 +31,26 @@ function createTabs() {
     const menu = document.createElement('button');
     menu.classList.add('menuButton');
     menu.innerText = "Menu";
+    menu.id='menu';
     tabs.appendChild(menu);
     const hours = document.createElement('button');
     hours.classList.add('menuButton');
+    hours.id='hours';
     hours.innerText = "Hours";
     tabs.appendChild(hours);
     const contact = document.createElement('button');
     contact.classList.add('menuButton');
     contact.innerText = "Contact";
+    contact.id='contact';
     tabs.appendChild(contact);
     content.appendChild(tabs);
+}
+export function homeInfo(){
+    const info = document.createElement('div');
+    info.id="info";
+    const doc = document.createElement('p');
+    doc.innerText = "Quick tip: the node_modules folder can get really big. It is customary to add a .gitignore file to your project so that you don’t have to sync the contents of node_modules to github. The dependencies that are stored there can be installed from your package.json by running npm install, so you don’t need to sync them.";
+    info.appendChild(doc);
+    content.appendChild(info);
+    console.log(info.style.top);
 }

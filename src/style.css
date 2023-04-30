@@ -1,6 +1,7 @@
 :root {
     --header-height: min(150px, 40%);
     --tabs-height: min(50px, 14%);
+    --total-header:calc(var(--header-height) + var(--tabs-height));
 }
 body {
     background-color: #171717;
@@ -13,7 +14,7 @@ body {
     top: 0;
     left: 0;
     display: grid;
-    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-columns: 2fr 8fr 2fr;
 }
 #logo {
     height: var(--header-height);
@@ -50,4 +51,14 @@ body {
     background-color: #333333;
     color: #aaaaaa;
     width: 100%;
+}
+p {
+    color: white;
+}
+#content {
+    position:relative;
+}
+#info {
+    position: absolute;
+    top: 200px;
 }
